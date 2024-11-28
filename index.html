@@ -5,18 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internet Presence</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+
+            body {
+            font-family: Arial, sans-serif;  /* Sets font family for text */
+            margin: 0;  /* Removes default margin */
+            padding: 0;  /* Removes default padding */
+            background-image: url('images/network.jpeg');  /* Background image for the webpage */
+            background-repeat: repeat;  /* Repeats the background image */
+            background-size: contain;  /* Ensures the background image covers the entire viewport */
+            background-color: rgba(0, 0, 0, 0.5);  /* Dark overlay to improve text readability */
+            min-height: 100vh;  /* Ensures the background covers the full viewport height */
+            background-position: center;  /* Centers the background image */
+        }
+
+        /* Media query for screens smaller than 600px (mobile devices) */
+        @media (max-width: 600px) {
+            /* Adjusts background image for smaller screens */
+            background-image: url('images/excavator-photo-little.png');  /* Image set for small screens width 400px */
         }
         header {
-            background-color: #0073e6;
+            background-color: rgba(0, 123, 255, 0.8);  /* Semi-transparent blue background */
+			background-color: #0073e6;
             color: white;
             padding: 20px 0;
             text-align: center;
+        }
+		        /* Container styling for the contact section */
+        .contact-container {
+			background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            display: flex;  /* Flexbox layout */
+            align-items: center;  /* Vertically center items */
+			justify-content: center;  /* Align items to the center */
+            gap: 100px;  /* Space between items */
+        }
+
+        /* Additional styling for the contact paragraph and image */
+        .contact-container picture {
+            max-width: 50%;  /* Limits the image width to 50% */
+        }
+        .contact-container p {
+            max-width: 50%;  /* Limits text width to 50% */
+            font-size: 1.9rem;  /* Sets font size for better readability */
+            line-height: 1.6;   /* Line height to improve readability */
+        }
+
+        /* Smaller text for smaller screen sizes */
+        @media (max-width: 600px) {
+            .contact-container p {
+                font-size: 1.2rem;  /* Slightly smaller text for mobile screens */
+            }
+        }
+		        /* Adjust layout for smaller screens (stacking elements vertically) */
+        @media (max-width: 600px) {
+            .contact-container {
+                flex-direction: column;  /* Stacks the image and text vertically */
+                align-items: center;  /* Centers elements horizontally */
+            }
+
+            .contact-container picture,
+            .contact-container p {
+                max-width: 100%;  /* Makes image and text take full width */
+            }
         }
         h1 {
             font-size: 36px;
@@ -27,14 +76,14 @@
             margin: 20px;
         }
         h2 {
-            color: #0073e6;
+            color: #22256e;
         }
         .content-container {
             max-width: 1200px;
             margin: 0 auto;
         }
         .services, .about, .how-it-works, .uses-benefits, .drawbacks-solutions, .contact {
-            background-color: white;
+           	background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
@@ -54,13 +103,25 @@
 <body>
 
 <header>
-    <h1>Internet Presence</h1>
-    <p>Affordable, Easy-to-Use Websites for Individuals, Businesses, and Organizations</p>
+    <h1>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/logo-small.jpg">
+                    <img src="images/logo-small.jpg" alt="Internet Presence Logo" />
+                </picture>
+			            <font color=”#000000″>
+						<p>Affordable, Easy-to-Use Websites</p>
+			
+            </div>
+	
+	</h1>
 </header>
 
 <main class="content-container">
     <!-- Welcome Section -->
-    <section>
+    <section class="services">
         <h2>Welcome to Internet Presence!</h2>
         <p>At <strong>Internet Presence</strong>, we make it easy and affordable for you to establish your own online footprint. Whether you want a personal website to store and share family memories, a website for an organization, or you need a new or improved site for your business—you're in the right place. We offer simple, cost-effective solutions to help you get seen on the Internet.</p>
     </section>
@@ -153,8 +214,7 @@
         <p>Ready to create your own Internet presence? Contact us to get started with your website project. Whether you have a clear vision or need some guidance, we’re here to help you succeed online.</p>
 
         <div class="contact-info">
-            <p><strong>Email:</strong> info@internetpresence.com</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> els80url@gmail.com</p>
         </div>
     </section>
 </main>
