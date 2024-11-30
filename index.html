@@ -99,6 +99,66 @@
             text-align: center;
         }
     </style>
+		<style>
+/* Styling for the View More button */
+#viewMoreButton {
+    background-color: #4CAF50;  /* Green background */
+    color: white;  /* White text */
+    border: none;  /* Remove border */
+    padding: 10px 20px;  /* Padding for better spacing */
+    text-align: center;  /* Center the text */
+    text-decoration: none;  /* Remove underline */
+    display: inline-block;  /* Make it inline-block */
+    font-size: 16px;  /* Set font size */
+    margin: 10px 0;  /* Margin around the button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    border-radius: 12px;  /* Rounded corners */
+    transition: background-color 0.3s;  /* Smooth transition for background color */
+}
+
+/* Hover effect for the button */
+#viewMoreButton:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+</style>
+<script>
+// JavaScript function to toggle the visibility of additional content
+function toggleContent() {
+    var content = document.getElementById("moreContent");
+    var button = document.getElementById("viewMoreButton");
+    
+    // Check if the content is currently hidden or visible
+    if (content.style.display === "none") {
+        content.style.display = "block";  // Show the content
+        button.textContent = "View Less...";  // Change button text
+    } else {
+        content.style.display = "none";  // Hide the content
+        button.textContent = "View More...";  // Reset button text
+    }
+}
+</script>
+<style>
+/* Styling for the View More button */
+#viewMoreButton {
+    background-color: #6fb1bd;  /* Green background */
+    color: white;  /* White text */
+    border: none;  /* Remove border */
+    padding: 10px 20px;  /* Padding for better spacing */
+    text-align: center;  /* Center the text */
+    text-decoration: none;  /* Remove underline */
+    display: inline-block;  /* Make it inline-block */
+    font-size: 16px;  /* Set font size */
+    margin: 10px 0;  /* Margin around the button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    border-radius: 12px;  /* Rounded corners */
+    transition: background-color 0.3s;  /* Smooth transition for background color */
+}
+
+/* Hover effect for the button */
+#viewMoreButton:hover {
+    background-color: #365459;  /* Darker green on hover */
+}
+</style>
 </head>
 <body>
 
