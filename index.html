@@ -36,7 +36,7 @@
             display: flex;  /* Flexbox layout */
             align-items: center;  /* Vertically center items */
 			justify-content: center;  /* Align items to the center */
-            gap: 40px;  /* Space between items */
+            gap: 100px;  /* Space between items */
         }
 
         /* Additional styling for the contact paragraph and image */
@@ -52,7 +52,7 @@
         /* Smaller text for smaller screen sizes */
         @media (max-width: 600px) {
             .contact-container p {
-                font-size: 2.8rem;  /* Slightly smaller text for mobile screens */
+                font-size: 1.2rem;  /* Slightly smaller text for mobile screens */
             }
         }
 		        /* Adjust layout for smaller screens (stacking elements vertically) */
@@ -99,7 +99,7 @@
             text-align: center;
         }
     </style>
-		<style>
+	<style>
 /* Styling for the View More button */
 #viewMoreButton {
     background-color: #4CAF50;  /* Green background */
@@ -159,6 +159,7 @@ function toggleContent() {
     background-color: #365459;  /* Darker green on hover */
 }
 </style>
+
 </head>
 <body>
 
@@ -172,7 +173,7 @@ function toggleContent() {
                     <img src="images/logo-small.jpg" alt="Internet Presence Logo" />
                 </picture>
 			            <font color=”#000000″>
-						<p>Build Your Website With Help From A Professional </p>
+						<p>Affordable, Easy-to-Use Websites</p>
 			
             </div>
 	
@@ -183,52 +184,50 @@ function toggleContent() {
     <!-- Welcome Section -->
     <section class="services">
         <h2>Welcome to Internet Presence!</h2>
-<p>At <strong>Internet Presence</strong> is the name I have given to my effort to assist people with building or imroving a website.</p>
+<p>At <strong>Internet Presence</strong>, we believe Information Technology is a tool, not the objective. It takes more than technology to develop a good website! <br><br>
 
 <!-- Button to toggle visibility of more content -->
 <button id="viewMoreButton" onclick="toggleContent()">View More...</button>
 
 <!-- Hidden content that will appear after the button is clicked -->
 <div id="moreContent" style="display:none;">
-	    <p>I have over 50 years of technology and business experience. My experience includes leading a team who took a back road site 
-	    on the Internet highway to Forbes top five business-to-business web presence. I have also worked with smaller companies and 
-	    developed a great deal of software for my own business ventures. Even though I have retired I still enjoy helping people build 
-	    an Internet presence.</p>
+Have built your website? Is it meeting your needs? Maybe are you planning to build a website for the first time? 
+There are countless tools and options available. Do you know how to choose the best software tools and 
+develope your content? There are long-term consequences to those decisions!<br><br>
+Just because something can be created for the Internet doesn’t mean it will satisfy your needs.<br>
 </div>
 
 </section>
-	
-<!-- Assistance Section -->
-    <section class="assistance">
-        <h2>Types of Assistance</h2>
-		<p>My focus is on the creation of simple, effective, and affordable websites for people with little experience. Here’s where I may be of service:</p>
-	<p><strong>Consultation</strong> – You tell us what you want your website to accomplish.</p><br>
-	    <button id="viewMoreButton" onclick="togglecontent(assistance)">View More...</button>
-	<div id="moreContent" style="display:none;">
-		<p>New text</p>
-		<button id="viewMoreButton" onclick="toggleContent(assistance)">View More...</button>
-		</div>
-	    
-           <p><strong>Content Creation</strong> – You provide message guidance plus text, images, and other elements for your site.</p><br>
-	        <div id="moreContent" style="display:none;">
-		<button id="viewMoreButton" onclick="toggleContent(assistance)">View More...</button>
-			<p>New text</p>
-		</div>
-		    /* break in updates */
-	    
-            <li><strong>Design</strong> – Internet Presence works with you to create a fully functional website.</li>
-		<div id="moreContent" style="display:none;">
-	   li><strong>Build</strong> – Internet Presence works with you to create a fully functional website.</li>
-		<div id="moreContent" style="display:none;">
-      	
-			<h3>What's Included?</h3>
+
+    <!-- Is this website for you? -->
+    <section class="services">
+        <h2>Is this website for you?</h2>
+        <p>If you’ve ever thought about creating an online presence but didn't know where to start, this is the website for you. Here’s who can benefit:</p>
         <ul>
-            <li>Consultation on satisfying your online needs</li><br>
-	    <li>Website structure and layout recommendations</li><br>
-            <li>Suggestions on graphics, photos, and narratives</li><br>
-            <li>Basic design and functionality requirements</li><br>
+            <li><strong>Individuals</strong> looking to share family events or hobbies</li><br>
+            <li><strong>Non-profit organizations</strong> in need of an online presence</li><br>
+            <li><strong>Small businesses</strong> seeking a website that represents their brand</li>
         </ul>
-        <p><em>Note:</em> Initial projects will not include data collection or e-commerce capabilities.</p>
+        <p>If you fall into any of these categories, keep reading to find out how <strong>Internet Presence</strong> can help you get your project started with ease.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>We will help you create a simple, effective, and affordable website that fits your goals. Here’s how we do it:</p>
+        <ol>
+            <li><strong>Initial Consultation</strong> – You tell us what you want your website to accomplish and who it’s for.</li><br>
+            <li><strong>Content Creation</strong> – You provide the text, images, and any other elements you want to feature on your site.</li><br>
+            <li><strong>Design & Build</strong> – We take your content and turn it into a fully functional website.</li>
+        </ol>
+        <h3>What's Included?</h3>
+        <ul>
+            <li>Website structure and layout tailored to your needs</li><br>
+            <li>Display of your graphics, photos, and narratives</li><br>
+            <li>Basic design and functionality</li><br>
+            <li>Sites are designed for easy updates and maintenance</li>
+        </ul>
+        <p><em>Note:</em> Projects are limited in functionality (such as data collection or e-commerce) but we can discuss what works best for you.</p>
     </section>
 
     <!-- About Section -->
@@ -238,53 +237,52 @@ function toggleContent() {
         <ul>
             <li><strong>Award-Winning Background:</strong> Previous experience in creating an award-winning internet presence for a Fortune 500 company.</li><br>
             <li><strong>Small-Scale Website Expertise:</strong> Specializing in designing and building websites for individuals, small businesses, and organizations.</li><br>
-            <li><strong>Skilled in Affordable Tools:</strong> We use open source web development tools to keep your costs low.</li>
+            <li><strong>Skilled in Affordable Tools:</strong> We use simple, low-cost web development tools to keep your costs low.</li>
         </ul>
     </section>
 
     <!-- How Our Service Works -->
     <section class="how-it-works">
         <h2>How Our Service Works</h2>
-        <p>Creating your website with <strong>Internet Presence</strong> is a straightforward process.</p>
+        <p>Creating your website with <strong>Internet Presence</strong> is a straightforward, step-by-step process.</p>
         <ol>
-            <li><strong>Request Assistance:</strong> You send Internet Presence an email (els80url@gmail.com) requesting assistance.</li><br>
-            <li><strong>Client Guidance:</strong> You define the goals of your site and provide content (text, images, and any other information).</li><br>
-            <li><strong>Website Creation:</strong> Internet Presence works with you to design and build a prototype of the website to address your needs.</li><br>
+            <li><strong>Client Guidance:</strong> You define the goals of your site and provide us with the content (text, images, and any other information you'd like).</li><br>
+            <li><strong>Website Creation:</strong> We design and build a prototype of the website based on your specifications.</li><br>
             <li><strong>Payment:</strong> There is <strong>no obligation</strong> to pay until you approve the prototype. Once approved, you’ll need to pay for the final website to be published.</li>
         </ol>
         <p>The prototype will remain <strong>free</strong> until you’re satisfied, but once you’re ready to go live, the website becomes <strong>your sole property</strong> after payment.</p>
 
         <h3>Pricing:</h3>
-        <p>The price of web site assistance is open. The cost of assistance will be determined by the assistance provided.</p>
+        <p>The price of a web site like this one would be about $500. The price of your web site would be determined by the amount of work needed for the completion of your prototype.</p>
+
         <h3>Domain & Hosting:</h3>
         <p>A <strong>domain name</strong> and <strong>hosting service</strong> are necessary to make your website live. You will need to purchase these, but we’re here to guide you through the process and publish the website for you. The ownership and control of the website remain <strong>with you</strong> once it’s paid for and published.</p>
     </section>
 
-    <!-- Features & Benefits Section -->
+    <!-- Uses & Benefits Section -->
     <section class="uses-benefits">
-        <h2>Features & Benefits</h2>
+        <h2>Uses & Benefits</h2>
         <ul>
-            <li><strong>Low Cost:</strong> Our websites offer an affordable way to get a presence online, even for those on a budget.</li><br>
-            <li><strong>Coding Standards:</strong> The use of standard coding conventions ensures you will not be tied to a sigle vendor.</li><br>
-            <li><strong>Portability & Flexibility:</strong> Your website is written in native code so may be viewed on multiple devices.</li><br>
+            <li><strong>Low Cost & Easy:</strong> Our websites offer an affordable way to get a presence online, even for those on a budget.</li><br>
+            <li><strong>Coding Standards:</strong> We ensure your site is built to modern web standards, so it won’t become obsolete.</li><br>
+            <li><strong>Portability & Flexibility:</strong> Written in native HTML, your site is portable and won’t be tied to ongoing vendor costs.</li><br>
             <li><strong>Device Independent:</strong> Responsive coding enables viewing on both computer and smart phone screens.</li><br>
-            <li><strong>Compatibility:</strong> Standard coding ensures your site may be supported by a variety of hosting services.</li><br>
-	    <li><strong>Performance:</strong> Web design features result a site that supports optimal processing speed.</li><br>
+            <li><strong>Compatibility:</strong> We ensure your site is operational across various hosting services so you’re not limited in your options.</li><br>
         </ul>
     </section>
 
     <!-- Limitations & Solutions Section -->
     <section class="drawbacks-solutions">
         <h2>Limitations & Solutions</h2>
-        <p>While our service is a great way for you to get started. Here are two limitations to keep in mind:</p>
+        <p>While our service is a great start, there are some limitations to keep in mind:</p>
         
         <li><strong>No Ongoing Support:</strong> Further updates or changes are not provided after the prototype is purchased.</li>
         
-        <li><strong>Solution:</strong> Internet Presence helps you make coding changes yourself. Another option would be to hire a freelance developmer. </li>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        <p><strong>Solution:</strong> You can make changes yourself or hire a third party for ongoing support. You can always replace your website with a new one if needed.</p>
+	      <br>
 	<li><strong>Prototype may not be produced:</strong> Limitations in staffing or skills may prevent a satisfactory prototype from being produced.</li>
        
-        <li><strong>Solution:</strong> You have no oblication to pay. Other web development options exist. Upon your request your materials will be deleted or returned.</li>
+        <p><strong>Solution:</strong> You have no oblication to pay. Other web development options exist. Upon your request the materials that you provided will be returned.</p>
     </section>
 
     <!-- Contact Section -->
