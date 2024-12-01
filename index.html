@@ -92,7 +92,9 @@
         .service-item, .contact-info {
             margin-bottom: 10px;
         }
-        footer {
+}
+ /* Styling for footer */
+        footer p {
             background-color: #333;
             color: white;
             padding: 10px 0;
@@ -154,19 +156,154 @@ function toggleContent() {
     transition: background-color 0.3s;  /* Smooth transition for background color */
 }
 
-/* Hover effect for the button */
-#viewMoreButton:hover {
-    background-color: #365459;  /* Darker green on hover */
+.cta-button {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-</style>
 
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .cta-button {
+    font-size: 14px;    /* Decrease font size */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .cta-button {
+    font-size: 12px;   /* Further decrease font size */
+    padding: 8px 16px; /* Further adjust padding */
+  }
+}
+
+        /* Hover effect for buttons */
+        button:hover {
+            background-color: #b3007d;  /* Changes background color on hover */
+        }
+
+        /* Styling for Call-to-Action (CTA) buttons */
+        .cta-button {
+            background-color: #7f79bd;  /* Orange background */
+            color: white;  /* White text */
+            padding: 12px 20px;  /* Padding inside the button */
+            border-radius: 5px;  /* Rounded corners */
+            text-decoration: none;  /* No underline for links */
+            font-weight: bold;  /* Bold text */
+            transition: background-color 0.3s ease;  /* Smooth transition on hover */
+        }
+
+        .cta-button:hover {
+            background-color: #33e0ff ;  /* Darker orange on hover */
+        }
+		
+		footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+		
+		</style>
+
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Earl Smith</title>
+    <style>
+        /* Basic reset and font styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .job-dates {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        .skills, .education, .affiliations {
+            margin-top: 30px;
+        }
+
+        .skills ul, .education ul, .affiliations ul {
+            padding-left: 20px;
+        }
+
+        .skills ul li, .education ul li, .affiliations ul li {
+            font-size: 1.1em;
+        }
+
+        .job-description {
+            margin-top: 5px;
+            padding-left: 20px;
+            font-size: 1em;
+            color: #34495e;
+        }
+
+        .key-achievements {
+            margin-left: 20px;
+            font-size: 1em;
+            color: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1, h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <h1>
 
-        <section id="contact" class="contact">
+        <section id="he" class="contact">
             <div class="contact-container">
                 <picture>
                     <source media="(max-width: 600px)" srcset="images/logo-small.jpg">
@@ -183,16 +320,8 @@ function toggleContent() {
     <section class="services">
     <section class="services">
         <h2>Welcome to Internet Presence!</h2>
-<p><strong>Internet Presence</strong> is the name I have given to my effort to assist people with building or imroving their presence on the Internet.</p>
+<h3><strong>"Internet Presence"</strong> is my effort to assist people in building or improving their presence on the Internet.</h3>
 
-<!-- Button to toggle visibility of more content -->
-<button id="viewMoreButton" onclick="toggleContent()">View More...</button>
-
-<!-- Hidden content that will appear after the button is clicked -->
-<div id="moreContent" style="display:none;">
-I have over 50 years of technology and business experience. My experience includes leading a team who took a back road site 
-	    on the Internet highway to Forbes top five business-to-business web presence. I have also worked with small companies and 
-	    a great deal of software development for my own business ventures. Even though I have retired I still enjoy helping people build an Internet presence.
 <br>
 </div>
 </section>
@@ -201,14 +330,20 @@ I have over 50 years of technology and business experience. My experience includ
     <!-- Who may benefit -->
     <section class="services">
     <section class="services">
-        <h2>Professional Help </h2>
-        <p>Here are situations where additional professional help may be beneficial:</p>
+        <h2>Professional Assistance </h2>
+        <p>Here are situations where available professional help may be beneficial:</p>
         <ul>
-            <li><strong>Individuals</strong> who want to share family events or hobbies with others</li><br>
-            <li><strong>Non-profit organizations</strong> in need of an online presence</li><br>
-            <li><strong>Businesses</strong> seeking a website that improves their image</li>
+            <li> <picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Individuals</strong> who want to share family events or hobbies with others</li>
+            <li> <picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong><strong>Non-profit organizations</strong> in need of an online presence</li>
+            <li> <picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong><strong>Businesses</strong> seeking a website that improves their image</li>
         </ul>
-        <p><strong>Internet Presence</strong> wants to assist those who may benefit the most.</p>
+       <div style="text-align:center"> <p><strong><b><i>Internet Presence</strong> wants to assist those who may benefit the most!</p></i></b></div style="text-align:center">
     </section>
     </section>
 
@@ -217,72 +352,146 @@ I have over 50 years of technology and business experience. My experience includ
     <!-- Services Section -->
     <section class="services">
         <h2>Services</h2>
-        <ol>
-            <li><strong>Consultation</strong> – A response to your plans, questions and concerns along with recommendations upon request.</li><br>
-            <li><strong>Software Evaluation</strong> – An assessment of software tools most closely aligned with your objectives.</li><br>
-            <li><strong>Vendor Evaluation</strong> – A review vendors offering ongoing website services that you may need.</li><br>
-	    <li><strong>Web Content</strong> – A review of choices for text, images, and any other content needed for your site.</li><br>
-            <li><strong>Web Design</strong> – A discussion of design alternetives with a case made for the one most likely to work for you.</li><br>
-	    <li><strong>Build Support</strong> – Assistance in using your content to create your fully functional website.</li>
-        </ol>
+        <ul>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Software Evaluation</strong> – An assessment of software tools most closely aligned with your objectives.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Vendor Evaluation</strong> – A review vendors offering ongoing website services that you may need.</li><br>
+	    <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Web Content</strong> – A review of choices for text, images, and any other content needed for your site.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Web Design</strong> – A discussion of design alternetives with a case made for the one most likely to work for you.</li><br>
+	    <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Build Support</strong> – Assistance in using your content to create a website that satisfies your needs.</li>
+        </ul>
     </section>
     </section>
 	    <!-- Uses & Benefits Section -->
    	    <section class="uses-benefits">
 	    <section class="uses-benefits">
-        <h2>Benefits of Proffesional Assistance</h2>
+        <h2>Benefits of Professional Assistance</h2>
         <ul>
-            <li><strong>Low Cost & Easy:</strong> Our websites offer an affordable way to get a presence online, even for those on a budget.</li><br>
-            <li><strong>Coding Standards:</strong> We ensure your site is built to modern web standards, so it won’t become obsolete.</li><br>
-            <li><strong>Portability & Flexibility:</strong> Written in native HTML, your site is portable and won’t be tied to ongoing vendor costs.</li><br>
-            <li><strong>Device Independent:</strong> Responsive coding enables viewing on both computer and smart phone screens.</li><br>
-            <li><strong>Compatibility:</strong> We ensure your site is operational across various hosting services so you’re not limited in your options.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Better Results:</strong> The end result of your project should be better because mistakes are more likely to be avoided.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Faster Completion:</strong> More experienced resources devoted to your project should enable faster completion.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Less Expensive:</strong> The professional services offered are free and can identify ways to avoid additional expense.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Educational Experience:</strong> You should have the benefit of many years of experience which is an easy way to learn.</li><br>
+            <li><picture>
+                     <img src="images/bullet.png" alt="Internet Presence Logo" />
+                 </picture>&nbsp;&nbsp;<strong>Longevity:</strong> Your project should be structured using proven tools and techniques more likely to stand the test of time.</li><br>
         </ul>
+		<p> <!-- Call to Action Button -->
+	   <a href="#email" class="cta-button">Email Me</a>
+	   
     </section>
     </section>
+	
     <!-- About Section -->
     <section class="about">
 	     <section class="about">
         <h2>About Internet Presence</h2>
-        <p>We’re a small, dedicated team led by a <strong>Technology Professional</strong> with many years of web development experience.</p>
+        <p><strong>Internet Presence</strong> is my effort to pass along some of the knowledge gained over many years of business and information techology experience.
+                    I'm Earl Smith, a technology and business strategy expert with decades of experience leading organizations through digital transformation and business 
+					development. Below is a snapshot of my professional journey.</p>
+					<p><strong>Technology Expertise:</strong> Currently specializing the design and build of websites for individuals, small businesses, and organizations.</p>
+			<br>
+           <div class="container">
+            <h2><u>Earl Smith's Professional Experience</u></h2>
         <ul>
-            <li><strong>Award-Winning Background:</strong> Previous experience in creating an award-winning internet presence for a Fortune 500 company.</li><br>
-            <li><strong>Small-Scale Website Expertise:</strong> Specializing in designing and building websites for individuals, small businesses, and organizations.</li><br>
-            <li><strong>Skilled in Affordable Tools:</strong> We use simple, low-cost web development tools to keep your costs low.</li>
+            <li>
+                <span class="job-title">President & CEO - Center for Education Assessment</span><br>
+                <span class="job-dates">2/2002 – Retired</span><br>
+                <div class="job-description">Co-founded CEA to enhance teacher education through technology. Developed commercial-grade software adopted by 30+ universities nationwide. Expanded services to include data organization for decision support.</div>
+            </li>
+            <li>
+                <span class="job-title">Head of Corporate Web Presence - Cerner Corporation</span><br>
+                <span class="job-dates">10/2000 – 2/2002</span><br>
+                <div class="job-description">Led the transformation of Cerner’s corporate website into a top B2B portal. Managed web development, content, security, and e-commerce initiatives. Recognized by Forbes as one of the top 5 healthcare industry websites.</div>
+            </li>
+            <li>
+                <span class="job-title">Director of IT Planning & Budgeting - Century Business Services (CBIZ)</span><br>
+                <span class="job-dates">6/1999 – 10/2000</span><br>
+                <div class="job-description">Oversaw integration of technology in business planning and acquisitions. Managed enterprise-wide projects like email consolidation and Y2K conversion.</div>
+            </li>
+            <li>
+                <span class="job-title">Internet Technology Consultant - Fortis Insurance</span><br>
+                <span class="job-dates">6/1997 – 6/1999</span><br>
+                <div class="job-description">Led the consolidation of web properties across 14 companies. Managed 100+ Internet projects and spearheaded a $250k security upgrade.</div>
+            </li>
+            <!-- Additional jobs can be added in the same format -->
         </ul>
+
+        <h2><u>Key Skills</u></h2>
+        <div class="skills">
+            <ul>
+                <li>Technology Strategy & Integration</li>
+                <li>Web Development & Management</li>
+                <li>Business Process Improvement</li>
+                <li>Team Leadership & Project Management</li>
+                <li>E-Commerce & Internet Security</li>
+                <li>Software Development & Systems Architecture</li>
+            </ul>
+        </div>
+
+        <h2><u>Education & Certifications</u></h2>
+        <div class="education">
+            <ul>
+                <li>Bachelor’s Degree, University of Northern Iowa</li>
+                <li>Licensed Financial Securities Broker (10/1992)</li>
+                <li>Certified Systems Professional (9/1985) – Association of Systems Management</li>
+            </ul>
+        </div>
+
+        <h2><u>Affiliations</u></h2>
+        <div class="affiliations">
+            <ul>
+                <li>Center for Internet Security Member (9/2001 – 3/2010)</li>
+            </ul>
+        </div>
+    </div>       
     </section>
     </section>
     <!-- How Our Service Works -->
     <section class="how-it-works">
 	     <section class="how-it-works">
-        <h2>How Our Service Works</h2>
-        <p>Creating your website with <strong>Internet Presence</strong> is a straightforward, step-by-step process.</p>
-        <ol>
-            <li><strong>Client Guidance:</strong> You define the goals of your site and provide us with the content (text, images, and any other information you'd like).</li><br>
-            <li><strong>Website Creation:</strong> We design and build a prototype of the website based on your specifications.</li><br>
-            <li><strong>Payment:</strong> There is <strong>no obligation</strong> to pay until you approve the prototype. Once approved, you’ll need to pay for the final website to be published.</li>
-        </ol>
-        <p>The prototype will remain <strong>free</strong> until you’re satisfied, but once you’re ready to go live, the website becomes <strong>your sole property</strong> after payment.</p>
+        <h2>Working Arrangement</h2>
+		<h3><u>Results of a Team Effort</u>:</h3>
+        <p>Your input is required in order to recieve Internet Presence benefits. Any material created with your involvement becomes <strong>your property.</strong> There are 
+        	<strong>no charges</strong> for the time invested by Internet Presence. At the same time, there will be no obligation for Internet Presence to continue 
+		or complete work on your behalf.</p>
 
-        <h3>Pricing:</h3>
-        <p>The price of a web site like this one would be about $500. The price of your web site would be determined by the amount of work needed for the completion of your prototype.</p>
-
-        <h3>Domain & Hosting:</h3>
-        <p>A <strong>domain name</strong> and <strong>hosting service</strong> are necessary to make your website live. You will need to purchase these, but we’re here to guide you through the process and publish the website for you. The ownership and control of the website remain <strong>with you</strong> once it’s paid for and published.</p>
+        <h3><u>Domain & Hosting</u>:</h3>
+        <p>A <strong>domain name</strong> and <strong>hosting service</strong> are necessary to make your website live on the Internet. You will need to purchase 
+		these. Internet Presence is willing to guide you through that process. But you must make all business transactions. This ensures ownership, control and 
+		responsibility for your website <strong>remains with you!</strong></p>
     </section>
     </section>
-    <!-- Contact Section -->
-    <section class="contact">
-    <section class="contact">
+    <!-- email Section -->
+    <section id="email" class="contact">
+    <section id="email" class="contact">
         <h2>Get Started Today</h2>
-        <p>Ready to create your own Internet presence? Contact us to get started with your website project. Whether you have a clear vision or need some guidance, we’re here to help you succeed online.</p>
+        <p>Ready to work with Internet Presence and make an impact online? Send an email to get the information flowing. Whether you have a clear vision or 
+		need some guidance let's work together so that you succeed.</p>
 
-        <div class="contact-info">
+        
             <p><strong>Email:</strong> els80url@gmail.com</p>
-        </div>
-    </section>
+        
+	</section>
     </section>
 </main>
+
 
 <footer>
     <p>&copy; 2024 Internet Presence | All rights reserved</p>
