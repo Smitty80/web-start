@@ -36,37 +36,10 @@
             display: flex;  /* Flexbox layout */
             align-items: center;  /* Vertically center items */
 			justify-content: center;  /* Align items to the center */
-            gap: 100px;  /* Space between items */
+              /*No Space between items needed */
         }
 
-        /* Additional styling for the contact paragraph and image */
-        .contact-container picture {
-            max-width: 50%;  /* Limits the image width to 50% */
-        }
-        .contact-container p {
-            max-width: 50%;  /* Limits text width to 50% */
-            font-size: 1.9rem;  /* Sets font size for better readability */
-            line-height: 1.6;   /* Line height to improve readability */
-        }
 
-        /* Smaller text for smaller screen sizes */
-        @media (max-width: 600px) {
-            .contact-container p {
-                font-size: 1.2rem;  /* Slightly smaller text for mobile screens */
-            }
-        }
-		        /* Adjust layout for smaller screens (stacking elements vertically) */
-        @media (max-width: 600px) {
-            .contact-container {
-                flex-direction: column;  /* Stacks the image and text vertically */
-                align-items: center;  /* Centers elements horizontally */
-            }
-
-            .contact-container picture,
-            .contact-container p {
-                max-width: 100%;  /* Makes image and text take full width */
-            }
-        }
         h1 {
             font-size: 36px;
             margin: 0;
